@@ -13,7 +13,7 @@ default_args = {
 }
 
 def read_csv_file():
-  df = pd.read_csv('/home/user1994/airflow/dags/datasets/insurance.csv')
+  df = pd.read_csv('/airflow/dags/datasets/insurance.csv')
   print(df)
   return df.to_json()
 
@@ -36,7 +36,7 @@ def groupby_smoker(ti):
     'charges': 'mean'
   }).reset_index()
   
-  smoker_df.to_csv('/home/user1994/airflow/output/grouped_by_smoker.csv', index=False)
+  smoker_df.to_csv('/airflow/output/grouped_by_smoker.csv', index=False)
   
   
 def groupby_region(ti):
@@ -48,7 +48,7 @@ def groupby_region(ti):
       'charges': 'mean'
   }).reset_index()
     
-  region_df.to_csv('/home/user1994/airflow/output/grouped_by_region.csv', index=False)
+  region_df.to_csv('/airflow/output/grouped_by_region.csv', index=False)
 
   
 
