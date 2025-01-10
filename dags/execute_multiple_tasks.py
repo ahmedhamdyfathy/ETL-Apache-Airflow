@@ -16,7 +16,7 @@ with DAG(
     description='DAG with multiple tasks and dependencies',
     schedule_interval=None,  # Set to None to run only manually
     catchup=False,  # Disable catchup for simplicity
-    template_searchpath='/home/user1994/airflow/dags/bash_script'
+    template_searchpath='/airflow/dags/bash_script'
 ) as dag:
 
     # Task A: Print "Starting Task A"
