@@ -1,2 +1,2 @@
 # ETL-Apache-Airflow
-Schedule individual tasks and specify dependencies programmatically in Python. Run workflows in Airflow, define tasks and dependencies, and use Python and SQLite operators. Understand concepts like conditional branching, catch up, and backfill in Apache Airflow.
+I programmatically scheduled individual tasks and specified their dependencies using Python. I ran workflows in Airflow, where I defined tasks and dependencies, and utilized Python and SQLite operators. I also understood concepts like conditional branching, catch-up, and backfill in Apache Airflow.
